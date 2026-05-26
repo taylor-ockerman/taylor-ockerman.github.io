@@ -1,0 +1,27 @@
+body {
+  max-width: 1000px;
+  margin: auto;
+
+  font-family: Arial;
+  line-height: 1.6;
+
+  padding: 40px;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+div {
+  border: 1px solid #ddd;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+}
