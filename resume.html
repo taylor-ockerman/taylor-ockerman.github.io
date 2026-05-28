@@ -14,9 +14,9 @@
       <a class="logo" href="index.html">Taylor Ockerman</a>
       <div class="nav-links">
         <a href="index.html#projects">Projects</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="https://github.com/taylor-ockerman" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/taylor-ockerman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="active-nav" aria-current="page">Resume</span>
+        <a class="external-link github-link" href="https://github.com/taylor-ockerman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="external-link linkedin-link" href="https://linkedin.com/in/taylor-ockerman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </nav>
 
@@ -25,8 +25,8 @@
         <p class="eyebrow">Resume</p>
         <h1>Taylor Ockerman</h1>
         <p class="project-summary">
-          Gameplay programmer and applied computer science graduate focused on C++, Unity, Unreal,
-          simulation systems, local player-versus-player gameplay, UI, and performance-minded game development.
+          Applied computer science student seeking Unreal Engine Generalist co-op roles focused on gameplay
+          prototyping, Blueprint/C++ implementation, debugging, version control, and multidisciplinary support.
         </p>
       </div>
 
@@ -39,27 +39,49 @@
       <aside class="resume-sidebar">
         <section class="resume-section">
           <h2>Technical Skills</h2>
-          <ul class="detail-list">
-            <li>C++</li>
-            <li>C#</li>
-            <li>Unity</li>
-            <li>Unreal Engine</li>
-            <li>Blueprints</li>
-            <li>SDL3</li>
-            <li>ECS/OOP</li>
-            <li>XML</li>
-            <li>Gameplay UI</li>
-            <li>Simulation</li>
-            <li>Local PvP</li>
-            <li>Performance</li>
-          </ul>
+          <div class="skill-cluster">
+            <h3>Engines & Gameplay</h3>
+            <ul class="detail-list">
+              <li>Unreal Engine</li>
+              <li>Blueprints</li>
+              <li>Unity</li>
+              <li>Gameplay prototyping</li>
+              <li>Local PvP systems</li>
+              <li>Projectiles</li>
+            </ul>
+          </div>
+
+          <div class="skill-cluster">
+            <h3>Programming</h3>
+            <ul class="detail-list">
+              <li>C++</li>
+              <li>C#</li>
+              <li>ECS/OOP</li>
+              <li>SDL3</li>
+              <li>XML</li>
+              <li>Data persistence</li>
+            </ul>
+          </div>
+
+          <div class="skill-cluster">
+            <h3>Workflow</h3>
+            <ul class="detail-list">
+              <li>Git/GitHub</li>
+              <li>Diversion</li>
+              <li>Debugging</li>
+              <li>Iteration</li>
+              <li>Documentation</li>
+              <li>Performance tuning</li>
+            </ul>
+          </div>
         </section>
 
         <section class="resume-section">
           <h2>Education</h2>
           <div class="resume-item">
             <h3>BCIT</h3>
-            <p>Bachelor of Applied Computer Science</p>
+            <p>Bachelor of Applied Computer Science, in progress</p>
+            <p>Diploma in Computer Systems Technology</p>
           </div>
         </section>
       </aside>
@@ -70,11 +92,27 @@
 
           <article class="resume-item">
             <div class="resume-item-header">
+              <h3>Unreal Prototype</h3>
+              <span>Unreal Engine / Blueprints</span>
+            </div>
+            <p>
+              Created Blueprint gameplay prototypes to explore projectile systems, interaction logic,
+              collision behavior, and fast mechanic iteration using Unreal Engine.
+            </p>
+            <ul>
+              <li>Prototyped projectile behavior with collision, timing, and gameplay response.</li>
+              <li>Structured Blueprint logic to keep experiments readable and easy to modify.</li>
+              <li>Used Diversion for version control while developing and testing prototype changes.</li>
+            </ul>
+          </article>
+
+          <article class="resume-item">
+            <div class="resume-item-header">
               <h3>Sandy Sim</h3>
               <span>C++ Engine</span>
             </div>
             <p>
-              Built a custom C++ particle sandbox with cellular automata, rendering layers, UI systems,
+              Built a solo custom C++ particle sandbox with cellular automata, rendering layers, UI systems,
               camera controls, and chunk-based simulation optimization.
             </p>
             <ul>
@@ -90,29 +128,13 @@
               <span>Unity Split-Screen PvP</span>
             </div>
             <p>
-              Developed local split-screen fencing gameplay centered on timing, stamina pressure,
-              readable player feedback, UI states, and match flow.
+              Developed local split-screen fencing gameplay, UI/menus, data persistence, and balancing
+              for a two-player Unity combat prototype.
             </p>
             <ul>
               <li>Built combat mechanics around spacing, commitment, recovery, and timing windows.</li>
-              <li>Used stamina systems to encourage intentional attacks and defensive decision-making.</li>
-              <li>Iterated on moment-to-moment game feel through quick testing and tuning loops.</li>
-            </ul>
-          </article>
-
-          <article class="resume-item">
-            <div class="resume-item-header">
-              <h3>Unreal Prototype</h3>
-              <span>Unreal Engine</span>
-            </div>
-            <p>
-              Created Blueprint gameplay prototypes to explore projectile systems, interaction logic,
-              collision behavior, and fast mechanic iteration.
-            </p>
-            <ul>
-              <li>Prototyped projectile behavior with collision, timing, and gameplay response.</li>
-              <li>Structured Blueprint logic to keep experiments readable and easy to modify.</li>
-              <li>Evaluated mechanic clarity through feedback, pacing, and action readability.</li>
+              <li>Implemented menus, UI states, and player-facing data persistence.</li>
+              <li>Balanced stamina, timing, and combat values through quick testing and tuning loops.</li>
             </ul>
           </article>
         </section>
@@ -122,11 +144,11 @@
           <div class="focus-grid">
             <div>
               <h3>Gameplay</h3>
-              <p>Player controls, combat systems, projectiles, stamina, state transitions, and UI feedback.</p>
+              <p>Blueprint prototypes, player controls, combat systems, projectiles, stamina, and feedback.</p>
             </div>
             <div>
-              <h3>Systems</h3>
-              <p>Custom architecture, rendering layers, data-driven setup, simulation behavior, and tools.</p>
+              <h3>Generalist Support</h3>
+              <p>Debugging, documentation, version control, and quick iteration.</p>
             </div>
             <div>
               <h3>Performance</h3>
@@ -140,3 +162,4 @@
 </body>
 
 </html>
+

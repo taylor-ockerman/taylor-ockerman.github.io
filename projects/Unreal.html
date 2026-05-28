@@ -10,11 +10,21 @@
 
 <body>
   <main class="project-page">
-    <a class="back-link" href="../index.html">Back to projects</a>
+    <nav class="nav-bar project-nav" aria-label="Primary navigation">
+      <a class="logo" href="../index.html">Taylor Ockerman</a>
+      <div class="nav-links">
+        <span class="active-nav" aria-current="page">Projects</span>
+        <a href="../resume.html">Resume</a>
+        <a class="external-link github-link" href="https://github.com/taylor-ockerman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="external-link linkedin-link" href="https://linkedin.com/in/taylor-ockerman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </nav>
+
+    <a class="button back-link" href="../index.html#projects">Back to Projects</a>
 
     <section class="project-hero">
       <div>
-        <p class="eyebrow">Unreal Prototype</p>
+        <p class="eyebrow">Blueprint Gameplay</p>
         <h1>Unreal Prototype</h1>
         <p class="project-summary">
           A set of Unreal gameplay experiments using Blueprints to prototype projectile systems,
@@ -29,14 +39,43 @@
         </ul>
       </div>
 
-      <div class="clip-frame">
-        <span>Add media/unreal-prototype.mp4</span>
+      <figure class="project-media">
+        <div class="video-crop clip-frame">
+          <video class="project-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Unreal Prototype gameplay clip">
+            <source src="../media/unreal.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption>Projectile prototype showing Blueprint-driven behavior, collision response, and rapid gameplay iteration.</figcaption>
+      </figure>
+    </section>
+
+    <section class="project-meta" aria-label="Project metadata">
+      <div>
+        <span>Role</span>
+        <strong>Gameplay / Unreal Generalist</strong>
+      </div>
+      <div>
+        <span>Engine</span>
+        <strong>Unreal Engine</strong>
+      </div>
+      <div>
+        <span>Tools</span>
+        <strong>Blueprints, Diversion</strong>
       </div>
     </section>
 
     <section class="detail-grid">
       <div class="detail-section">
-        <h2>Features</h2>
+        <h2>My Role</h2>
+        <ul>
+          <li>Implemented and iterated gameplay behavior in Unreal using Blueprints.</li>
+          <li>Focused on making projectile timing, collision response, and action feedback readable.</li>
+          <li>Used Diversion for source control while developing and testing prototype changes.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2>Implemented Systems</h2>
         <ul>
           <li>Projectile behavior experiments with collision, timing, and gameplay response.</li>
           <li>Blueprint-driven interaction logic for quick testing and iteration.</li>
@@ -45,11 +84,20 @@
       </div>
 
       <div class="detail-section">
-        <h2>Focus</h2>
+        <h2>Tools Used</h2>
+        <ul>
+          <li>Unreal Engine for gameplay prototyping and editor-based iteration.</li>
+          <li>Blueprints for implementing behavior quickly and keeping mechanics easy to adjust.</li>
+          <li>Diversion for version control on the Unreal project.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2>What I Practiced</h2>
         <ul>
           <li>Converting gameplay ideas into testable mechanics quickly.</li>
-          <li>Reading action clarity through projectile speed, feedback, and collision results.</li>
-          <li>Keeping Blueprint graphs understandable while exploring behavior changes.</li>
+          <li>Debugging gameplay issues through collision behavior, timing, and feedback.</li>
+          <li>Keeping Blueprint logic understandable while exploring behavior changes.</li>
         </ul>
       </div>
     </section>
@@ -57,3 +105,4 @@
 </body>
 
 </html>
+

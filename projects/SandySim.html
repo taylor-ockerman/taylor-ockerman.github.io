@@ -10,15 +10,25 @@
 
 <body>
   <main class="project-page">
-    <a class="back-link" href="../index.html">Back to projects</a>
+    <nav class="nav-bar project-nav" aria-label="Primary navigation">
+      <a class="logo" href="../index.html">Taylor Ockerman</a>
+      <div class="nav-links">
+        <span class="active-nav" aria-current="page">Projects</span>
+        <a href="../resume.html">Resume</a>
+        <a class="external-link github-link" href="https://github.com/taylor-ockerman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="external-link linkedin-link" href="https://linkedin.com/in/taylor-ockerman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </nav>
+
+    <a class="button back-link" href="../index.html#projects">Back to Projects</a>
 
     <section class="project-hero">
       <div>
         <p class="eyebrow">C++ Engine</p>
         <h1>Sandy Sim</h1>
         <p class="project-summary">
-          A custom C++ engine and particle sandbox built around cellular automata, real-time rendering,
-          UI layers, and chunk-based optimization for larger simulations.
+          A solo custom C++ engine and particle sandbox built around cellular automata, real-time
+          rendering, UI layers, and chunk-based optimization for larger simulations.
         </p>
         <ul class="detail-list">
           <li>C++</li>
@@ -27,17 +37,49 @@
           <li>XML</li>
           <li>Particle Simulation</li>
         </ul>
+        <div class="project-actions">
+          <a class="button primary" href="https://github.com/taylor-ockerman/COMP8501-GameEngine" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+        </div>
       </div>
 
-      <video class="clip-frame project-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim gameplay clip">
-        <source src="../media/sandysim.mp4" type="video/mp4">
-      </video>
+      <figure class="project-media">
+        <div class="video-crop clip-frame">
+          <video class="project-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim gameplay clip">
+            <source src="../media/sandysim.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption>Particle simulation showing custom engine behavior, camera interaction, and real-time system updates.</figcaption>
+      </figure>
     </section>
 
     <section class="media-gallery single-clip-gallery" aria-label="Sandy Sim gameplay clips">
-      <video class="project-video gallery-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim flammability demo clip">
-        <source src="../media/sandysim2.mp4" type="video/mp4">
-      </video>
+      <figure class="project-media">
+        <div class="video-crop gallery-video">
+          <video class="project-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim flammability demo clip">
+            <source src="../media/sandysim2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption>Fire and element-interaction test for simulation behavior and stability.</figcaption>
+      </figure>
+    </section>
+
+    <section class="project-meta" aria-label="Project metadata">
+      <div>
+        <span>Role</span>
+        <strong>Solo Engine / Gameplay Programmer</strong>
+      </div>
+      <div>
+        <span>Engine</span>
+        <strong>Custom C++ Engine</strong>
+      </div>
+      <div>
+        <span>Tools</span>
+        <strong>C++, SDL3, GitHub</strong>
+      </div>
+      <div>
+        <span>Source</span>
+        <strong>Public GitHub repository</strong>
+      </div>
     </section>
 
     <section class="detail-grid">
@@ -63,3 +105,4 @@
 </body>
 
 </html>
+

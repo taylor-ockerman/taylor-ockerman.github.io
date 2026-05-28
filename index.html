@@ -13,11 +13,10 @@
     <nav class="nav-bar" aria-label="Primary navigation">
       <a class="logo" href="index.html">Taylor Ockerman</a>
       <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <span class="active-nav" aria-current="page">Projects</span>
         <a href="resume.html">Resume</a>
-        <a href="https://github.com/taylor-ockerman" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/taylor-ockerman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="external-link github-link" href="https://github.com/taylor-ockerman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="external-link linkedin-link" href="https://linkedin.com/in/taylor-ockerman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </nav>
 
@@ -25,43 +24,43 @@
       <p class="eyebrow">Gameplay Programmer | Engine Developer</p>
       <h1>Building responsive systems, readable tools, and game-feel focused prototypes.</h1>
       <p class="hero-copy">
-        BCIT Bachelor of Applied Computer Science graduate focused on C++, Unity, Unreal, simulation,
-        local player-versus-player gameplay, UI, and performance-minded systems for games.
+        BCIT Bachelor of Applied Computer Science graduate focused on Unreal gameplay prototyping,
+        Blueprints, C++, Unity, local player-versus-player gameplay, debugging, and performance-minded
+        systems for games.
       </p>
     </section>
   </header>
 
   <main>
     <section class="section-intro" id="projects">
-      <p class="eyebrow">Selected Work</p>
-      <h2>Game Projects</h2>
+      <h2>Selected Work</h2>
       <p>
-        Three projects showing a range from custom engine work to Unity split-screen combat and Unreal
-        gameplay prototyping.
+        Three projects showing a range from Unreal gameplay prototyping to custom C++ engine work and
+        Unity split-screen combat.
       </p>
     </section>
 
     <section class="project-grid" aria-label="Project list">
       <article class="project-card">
-        <a class="media-link" href="projects/SandySim.html" aria-label="Open Sandy Sim project page">
-          <video class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim gameplay clip">
-            <source src="media/sandysim.mp4" type="video/mp4">
+        <a class="media-link" href="projects/Unreal.html" aria-label="Open Unreal Prototype project page">
+          <video class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Unreal Prototype gameplay clip">
+            <source src="media/unreal.mp4" type="video/mp4">
           </video>
         </a>
         <div class="project-card-body">
           <div>
-            <p class="tag">C++ Engine</p>
-            <h3><a href="projects/SandySim.html">Sandy Sim</a></h3>
+            <p class="tag">Blueprint Gameplay</p>
+            <h3><a href="projects/Unreal.html">Unreal Prototype</a></h3>
           </div>
           <p>
-            Custom ECS/OOP C++ engine featuring particle simulation, real-time rendering, UI systems,
-            camera controls, and chunk-based optimization.
+            Blueprint gameplay experiments exploring projectile behavior, interaction logic, rapid iteration,
+            and moment-to-moment action feel.
           </p>
           <ul class="tech-list">
-            <li>C++</li>
-            <li>SDL3</li>
-            <li>ECS</li>
-            <li>Simulation</li>
+            <li>Unreal</li>
+            <li>Blueprints</li>
+            <li>Projectiles</li>
+            <li>Prototyping</li>
           </ul>
         </div>
       </article>
@@ -78,62 +77,65 @@
             <h3><a href="projects/Allez.html">Allez</a></h3>
           </div>
           <p>
-            Local split-screen fencing game focused on readable combat timing, stamina pressure,
-            player feedback, UI states, and match flow.
+            Local split-screen fencing game focused on combat timing, stamina balance, menus,
+            player feedback, and persistent game data.
           </p>
           <ul class="tech-list">
             <li>Unity</li>
             <li>C#</li>
             <li>Local PvP</li>
             <li>UI</li>
+            <li>Persistence</li>
           </ul>
         </div>
       </article>
 
       <article class="project-card">
-        <a class="media-link" href="projects/Unreal.html" aria-label="Open Unreal Prototype project page">
-          <div class="clip-placeholder">
-            <span>Unreal Clip</span>
-            <small>Add media/unreal-prototype.mp4</small>
-          </div>
+        <a class="media-link" href="projects/SandySim.html" aria-label="Open Sandy Sim project page">
+          <video class="project-video" autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim gameplay clip">
+            <source src="media/sandysim.mp4" type="video/mp4">
+          </video>
         </a>
         <div class="project-card-body">
           <div>
-            <p class="tag">Unreal Prototype</p>
-            <h3><a href="projects/Unreal.html">Unreal Prototype</a></h3>
+            <p class="tag">Custom C++ Engine</p>
+            <h3><a href="projects/SandySim.html">Sandy Sim</a></h3>
           </div>
           <p>
-            Blueprint gameplay experiments exploring projectile behavior, interaction logic, rapid iteration,
-            and moment-to-moment action feel.
+            Solo custom ECS/OOP C++ engine featuring particle simulation, real-time rendering,
+            UI systems, camera controls, and chunk-based optimization.
           </p>
           <ul class="tech-list">
-            <li>Unreal</li>
-            <li>Blueprints</li>
-            <li>Projectiles</li>
-            <li>Prototyping</li>
+            <li>C++</li>
+            <li>SDL3</li>
+            <li>ECS</li>
+            <li>Simulation</li>
           </ul>
         </div>
       </article>
     </section>
 
-    <section class="skills-band" id="skills">
+    <section class="skills-band">
       <div class="section-intro compact">
-        <p class="eyebrow">Core Strengths</p>
-        <h2>What I Bring</h2>
+        <h2>How I Work</h2>
       </div>
 
-      <div class="skill-grid">
+      <div class="skill-grid four-column">
         <div>
-          <h3>Gameplay Systems</h3>
-          <p>Combat loops, player controls, stamina, projectiles, state transitions, and UI feedback.</p>
+          <h3>Prototype Quickly</h3>
+          <p>Turn mechanics into testable Unreal Blueprint, Unity, or C++ systems before overbuilding them.</p>
         </div>
         <div>
-          <h3>Engine & Tools</h3>
-          <p>Custom C++ architecture, ECS/OOP design, rendering layers, XML data, and debugging workflows.</p>
+          <h3>Tune For Feel</h3>
+          <p>Iterate on timing, feedback, controls, and readability until the interaction is easier to understand.</p>
         </div>
         <div>
-          <h3>Performance</h3>
-          <p>Chunk sleeping, simulation stability, collision cost reduction, and profiling-minded iteration.</p>
+          <h3>Debug Systems</h3>
+          <p>Track down collision, simulation, and state issues by isolating behavior and testing small changes.</p>
+        </div>
+        <div>
+          <h3>Work In Source</h3>
+          <p>Use Git, GitHub, and Diversion to keep project history organized and changes reviewable.</p>
         </div>
       </div>
     </section>

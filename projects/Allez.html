@@ -10,7 +10,17 @@
 
 <body>
   <main class="project-page">
-    <a class="back-link" href="../index.html">Back to projects</a>
+    <nav class="nav-bar project-nav" aria-label="Primary navigation">
+      <a class="logo" href="../index.html">Taylor Ockerman</a>
+      <div class="nav-links">
+        <span class="active-nav" aria-current="page">Projects</span>
+        <a href="../resume.html">Resume</a>
+        <a class="external-link github-link" href="https://github.com/taylor-ockerman" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="external-link linkedin-link" href="https://linkedin.com/in/taylor-ockerman" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </nav>
+
+    <a class="button back-link" href="../index.html#projects">Back to Projects</a>
 
     <section class="project-hero">
       <div>
@@ -18,7 +28,7 @@
         <h1>Allez</h1>
         <p class="project-summary">
           A local split-screen fencing game built in Unity, focused on sharp timing, stamina
-          management, clear combat feedback, and readable two-player match flow.
+          management, menu flow, persistent player data, and readable two-player match balance.
         </p>
         <ul class="detail-list">
           <li>Unity</li>
@@ -26,12 +36,40 @@
           <li>Local PvP</li>
           <li>Combat</li>
           <li>UI</li>
+          <li>Persistence</li>
         </ul>
+        <div class="project-actions">
+          <a class="button primary" href="https://github.com/katelylynn/Allez" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+        </div>
       </div>
 
-      <video class="clip-frame project-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Allez gameplay clip">
-        <source src="../media/allez.mp4" type="video/mp4">
-      </video>
+      <figure class="project-media">
+        <div class="video-crop clip-frame">
+          <video class="project-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Allez gameplay clip">
+            <source src="../media/allez.mp4" type="video/mp4">
+          </video>
+        </div>
+        <figcaption>Local split-screen combat prototype focused on spacing, timing, stamina pressure, and player feedback.</figcaption>
+      </figure>
+    </section>
+
+    <section class="project-meta" aria-label="Project metadata">
+      <div>
+        <span>Role</span>
+        <strong>Gameplay / UI Programmer</strong>
+      </div>
+      <div>
+        <span>Engine</span>
+        <strong>Unity</strong>
+      </div>
+      <div>
+        <span>Tools</span>
+        <strong>C#, GitHub</strong>
+      </div>
+      <div>
+        <span>Source</span>
+        <strong>Public GitHub repository</strong>
+      </div>
     </section>
 
     <section class="detail-grid">
@@ -40,7 +78,8 @@
         <ul>
           <li>Fencing mechanics built around spacing, commitment, recovery, and timing windows.</li>
           <li>Stamina pressure to encourage measured attacks instead of constant button mashing.</li>
-          <li>UI states for player feedback, round flow, and match readability.</li>
+          <li>Menus and UI states for player feedback, round flow, and match readability.</li>
+          <li>Data persistence for saving and restoring player-facing game data.</li>
         </ul>
       </div>
 
@@ -49,7 +88,7 @@
         <ul>
           <li>Making split-screen player actions feel responsive while keeping combat outcomes readable.</li>
           <li>Communicating player state clearly through UI and in-game feedback.</li>
-          <li>Iterating on game feel through short test loops and practical tuning.</li>
+          <li>Balancing stamina, timing, and combat values through short test loops and practical tuning.</li>
         </ul>
       </div>
     </section>
@@ -57,3 +96,4 @@
 </body>
 
 </html>
+
