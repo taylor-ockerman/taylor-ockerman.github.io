@@ -144,13 +144,6 @@ h3 {
   font-size: 1.1rem;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 28px;
-}
-
 main {
   padding-bottom: 64px;
 }
@@ -402,6 +395,10 @@ main {
   margin-bottom: 34px;
 }
 
+.single-clip-gallery {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .gallery-video {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -459,7 +456,6 @@ main {
     width: min(100% - 28px, 1120px);
   }
 
-  .hero-actions,
   .nav-links {
     width: 100%;
   }
