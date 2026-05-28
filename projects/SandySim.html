@@ -1,29 +1,66 @@
-Overview
+<!DOCTYPE html>
+<html lang="en">
 
-Tech Stack
-- C++
-- SDL3
-- ECS/OOP
-- XML
-- Particle simulation
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandy Sim | Taylor Ockerman</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
 
-Features
-- Cellular automata
-- Density interactions
-- Fire / water / steam
-- Chunk optimization
-- Camera systems
-- UI layers
+<body>
+  <main class="project-page">
+    <a class="back-link" href="../index.html">Back to projects</a>
 
-Challenges
-- Performance scaling
-- Collision handling
-- Chunk sleeping
-- Simulation stability
+    <section class="project-hero">
+      <div>
+        <p class="eyebrow">C++ Engine</p>
+        <h1>Sandy Sim</h1>
+        <p class="project-summary">
+          A custom C++ engine and particle sandbox built around cellular automata, real-time rendering,
+          UI layers, and chunk-based optimization for larger simulations.
+        </p>
+        <ul class="detail-list">
+          <li>C++</li>
+          <li>SDL3</li>
+          <li>ECS/OOP</li>
+          <li>XML</li>
+          <li>Particle Simulation</li>
+        </ul>
+      </div>
 
-Media
-[screenshots]
-[gif]
-[video]
+      <video class="clip-frame project-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim gameplay clip">
+        <source src="../media/sandysim.mp4" type="video/mp4">
+      </video>
+    </section>
 
-Repository
+    <section class="media-gallery" aria-label="Sandy Sim gameplay clips">
+
+      <video class="project-video gallery-video" controls autoplay muted loop playsinline preload="metadata" aria-label="Sandy Sim flammability demo clip">
+        <source src="../media/sandysim2.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section class="detail-grid">
+      <div class="detail-section">
+        <h2>Features</h2>
+        <ul>
+          <li>Cellular automata simulation for sand, water, fire, steam, and density interactions.</li>
+          <li>Chunk sleeping and update partitioning to reduce unnecessary simulation work.</li>
+          <li>Camera systems, UI layers, and rendering structure built into the custom engine.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2>Focus</h2>
+        <ul>
+          <li>Scaling particle counts while keeping interactions stable and readable.</li>
+          <li>Balancing ECS-style data flow with practical object-oriented gameplay code.</li>
+          <li>Debugging collision behavior and edge cases across active and sleeping chunks.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

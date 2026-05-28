@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Taylor Ockerman</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="resume-page">
+    <nav class="nav-bar resume-nav" aria-label="Resume navigation">
+      <a class="logo" href="index.html">Taylor Ockerman</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="resume/Resume_Taylor_Ockerman.pdf">PDF</a>
+      </div>
+    </nav>
+
+    <section class="resume-hero">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h1>Taylor Ockerman</h1>
+        <p class="project-summary">
+          Gameplay programmer and applied computer science graduate focused on C++, Unity, Unreal,
+          simulation systems, multiplayer gameplay, UI, and performance-minded game development.
+        </p>
+      </div>
+
+      <div class="resume-actions">
+        <a class="button primary" href="resume/Resume_Taylor_Ockerman.pdf">Download PDF</a>
+        <a class="button" href="https://github.com/taylor-ockerman">GitHub</a>
+        <a class="button" href="https://linkedin.com/in/taylor-ockerman">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="resume-layout">
+      <aside class="resume-sidebar">
+        <section class="resume-section">
+          <h2>Technical Skills</h2>
+          <ul class="detail-list">
+            <li>C++</li>
+            <li>C#</li>
+            <li>Unity</li>
+            <li>Unreal Engine</li>
+            <li>Blueprints</li>
+            <li>SDL3</li>
+            <li>ECS/OOP</li>
+            <li>XML</li>
+            <li>Gameplay UI</li>
+            <li>Simulation</li>
+            <li>Multiplayer</li>
+            <li>Performance</li>
+          </ul>
+        </section>
+
+        <section class="resume-section">
+          <h2>Education</h2>
+          <div class="resume-item">
+            <h3>BCIT</h3>
+            <p>Bachelor of Applied Computer Science</p>
+          </div>
+        </section>
+      </aside>
+
+      <div class="resume-main">
+        <section class="resume-section">
+          <h2>Project Experience</h2>
+
+          <article class="resume-item">
+            <div class="resume-item-header">
+              <h3>Sandy Sim</h3>
+              <span>C++ Engine</span>
+            </div>
+            <p>
+              Built a custom C++ particle sandbox with cellular automata, rendering layers, UI systems,
+              camera controls, and chunk-based simulation optimization.
+            </p>
+            <ul>
+              <li>Implemented sand, water, fire, steam, and density-based particle interactions.</li>
+              <li>Designed chunk sleeping and update partitioning to improve simulation scaling.</li>
+              <li>Balanced ECS-style architecture with practical object-oriented gameplay code.</li>
+            </ul>
+          </article>
+
+          <article class="resume-item">
+            <div class="resume-item-header">
+              <h3>Allez</h3>
+              <span>Unity Multiplayer</span>
+            </div>
+            <p>
+              Developed multiplayer fencing gameplay centered on timing, stamina pressure, readable
+              player feedback, UI states, and match flow.
+            </p>
+            <ul>
+              <li>Built combat mechanics around spacing, commitment, recovery, and timing windows.</li>
+              <li>Used stamina systems to encourage intentional attacks and defensive decision-making.</li>
+              <li>Iterated on moment-to-moment game feel through quick testing and tuning loops.</li>
+            </ul>
+          </article>
+
+          <article class="resume-item">
+            <div class="resume-item-header">
+              <h3>Unreal Prototype</h3>
+              <span>Unreal Engine</span>
+            </div>
+            <p>
+              Created Blueprint gameplay prototypes to explore projectile systems, interaction logic,
+              collision behavior, and fast mechanic iteration.
+            </p>
+            <ul>
+              <li>Prototyped projectile behavior with collision, timing, and gameplay response.</li>
+              <li>Structured Blueprint logic to keep experiments readable and easy to modify.</li>
+              <li>Evaluated mechanic clarity through feedback, pacing, and action readability.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="resume-section">
+          <h2>Development Focus</h2>
+          <div class="focus-grid">
+            <div>
+              <h3>Gameplay</h3>
+              <p>Player controls, combat systems, projectiles, stamina, state transitions, and UI feedback.</p>
+            </div>
+            <div>
+              <h3>Systems</h3>
+              <p>Custom architecture, rendering layers, data-driven setup, simulation behavior, and tools.</p>
+            </div>
+            <div>
+              <h3>Performance</h3>
+              <p>Chunk sleeping, collision cost reduction, stability debugging, and profiling-minded iteration.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
